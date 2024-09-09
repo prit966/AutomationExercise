@@ -24,8 +24,7 @@ public class HomePage {
 
 	// actions
 
-	public   void clickOnLoginOption()//public void  clickOnLoginOption()
-	{
+	public   void clickOnLoginOption() {
 		loginOption.click();
 
 		
