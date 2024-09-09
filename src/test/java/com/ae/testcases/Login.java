@@ -82,7 +82,7 @@ public class Login extends Base {
 		loginpage.enterEmailAddress(Utilities.generateEmailWithTimeStamp());
 		loginpage.enterPassword(dataprop.getProperty("invalidpassword"));
 	    loginpage.clickOnLoginButton();
-		//Assert.assertTrue(loginpage.retrieveEmailPasswordWarningMessage().contains(dataprop.getProperty("emailpasswordNotMatchWarning")),"Expected message not displayed");
+		Assert.assertTrue(loginpage.retrieveEmailPasswordWarningMessage().contains(dataprop.getProperty("emailpasswordNotMatchWarning")),"Expected message not displayed");
 		
 		
 		
